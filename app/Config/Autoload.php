@@ -62,7 +62,7 @@ class Autoload extends AutoloadConfig
 	 *```
 	 * @var array<string, string>
 	 */
-	public $classmap = [];
+	public $classmap = ['Doctrine' => APPPATH. 'Libraries/Doctrine.php'];
 
 	/**
 	 * -------------------------------------------------------------------
@@ -81,4 +81,5 @@ class Autoload extends AutoloadConfig
 	 * @var array<int, string>
 	 */
 	public $files = [];
+
 }

@@ -8,6 +8,7 @@ use CodeIgniter\HTTP\IncomingRequest;
 use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
 use Psr\Log\LoggerInterface;
+use Doctrine;
 
 /**
  * Class BaseController
@@ -45,11 +46,9 @@ class BaseController extends Controller
 	 * @param ResponseInterface $response
 	 * @param LoggerInterface   $logger
 	 */
-	public function initController(RequestInterface $request, ResponseInterface $response, LoggerInterface $logger)
-	{
+	public function initController(RequestInterface $request, ResponseInterface $response, LoggerInterface $logger){
 		// Do Not Edit This Line
 		parent::initController($request, $response, $logger);
-
 		//--------------------------------------------------------------------
 		// Preload any models, libraries, etc, here.
 		//--------------------------------------------------------------------
