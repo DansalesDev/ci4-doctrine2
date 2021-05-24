@@ -4,8 +4,13 @@
 namespace App\Controllers;
 
 use Doctrine;
-use Doctrine\ORM\EntityManager;
-use Doctrine\ORM\Tools\SchemaTool;
+
+use Doctrine\ORM\EntityManager,
+    Doctrine\ORM\Tools\SchemaTool;
+
+use Doctrine\DBAL\Connection,
+    Doctrine\DBAL\Exception as DoctrineException;
+
 use Exception;
 
 class DoctrineTools extends BaseController {
@@ -25,18 +30,19 @@ class DoctrineTools extends BaseController {
      * DoctrineTools constructor.
      */
     public function __construct() {
-        $ci = new Doctrine();
-        $this->em = $ci::$entityManager;
+        $this->em = Doctrine::retrieveEntityManager();
         $this->schemaTool = new SchemaTool($this->em);
+        $connection = $this->em->getConnection();
+        $this->registerCustomDatabaseTypes($connection);
+
     }
 
     public function index() {
-//        die(json_encode($_POST));
         if(!$_POST) {
             die(view('layout/doctrine'));
         } else {
             try {
-                $classes =  $this->getEntitesList();
+                $classes =  $this->getEntitiesList();
                 $this->schemaTool->updateSchema($classes);
                 die(view('layout/doctrine', array('success' => true)));
             } catch (Exception $ex){
@@ -46,14 +52,18 @@ class DoctrineTools extends BaseController {
 
     }
 
-    private function getEntitesList(): array{
-        $classes = [
-            $this->em->getClassMetadata('App\Models\Entities\Entity'),
-            $this->em->getClassMetadata('App\Models\Entities\User'),
+    private function getEntitiesList(): array{
+        return  [
             $this->em->getClassMetadata('App\Models\Entities\Admin'),
         ];
-        return $classes;
 
+    }
+    private function registerCustomDatabaseTypes(Connection $connection) {
+        try {
+            $connection->getDatabasePlatform()->registerDoctrineTypeMapping('enum', 'string');
+        } catch (DoctrineException $ex) {
+            throw DoctrineException::unknownColumnType('');
+        }
     }
 
 }

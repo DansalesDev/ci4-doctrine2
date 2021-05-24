@@ -2,10 +2,12 @@
 
 namespace App\Controllers;
 
-class Home extends BaseController
-{
-	public function index()
-	{
-		return view('welcome_message');
-	}
+
+use App\Models\Entities\Admin;
+use App\Models\Repository\AdminRepository;
+
+class Home extends BaseController{
+	public function index() {
+      AdminRepository::findAll();
+    }
 }

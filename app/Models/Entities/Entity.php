@@ -4,6 +4,7 @@
 namespace App\Models\Entities;
 
 use Doctrine\ORM\Mapping as ORM;
+use DateTime;
 
 /**
  * Class Entity
@@ -17,4 +18,10 @@ abstract class Entity {
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     protected $id;
+
+    /**
+     * @var DateTime
+     */
+    protected $creationDate;
+
 }
