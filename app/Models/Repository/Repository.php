@@ -19,10 +19,7 @@ abstract class Repository  {
         self::$em->flush();
     }
 
-    static function findAll(){
-        self::$em = Doctrine::retrieveEntityManager();
-//        return self::$em->getRepository(self::$entityName)->findAll();
-    }
+    protected static abstract function findAll();
 
 
 

@@ -8,6 +8,8 @@ use App\Models\Repository\AdminRepository;
 
 class Home extends BaseController{
 	public function index() {
-      AdminRepository::findAll();
+
+	    die(json_encode($this->request));
+     $teste =  AdminRepository::findAll();
     }
 }

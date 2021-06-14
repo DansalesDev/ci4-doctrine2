@@ -1,0 +1,24 @@
+server {
+    listen 80;
+    listen [::]:80;
+    root /var/www/html/weebet;
+    index index.php index.html index.htm;
+    server_name weebet.local;
+    client_max_body_size 10M;
+#    more_set_headers 'Access-Control-Allow-Origin: $http_origin';
+#    more_set_headers 'Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE, HEAD';
+#    more_set_headers 'Access-Control-Allow-Credentials: true';
+#    more_set_headers 'Access-Control-Allow-Headers: Origin,Content-Type,Accept,Authorization';
+    location / {
+         try_files $uri $uri/ index.php?$query_string;
+    }
+    location ~ \.php$ {
+        try_files $uri /index.php =404;
+        fastcgi_split_path_info ^(.+\.php)(/.+)$;
+        fastcgi_pass unix:/run/php/php7.2-fpm.sock;
+        fastcgi_index index.php;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        fastcgi_intercept_errors on;
+        include fastcgi_params;
+    }
+}

@@ -32,10 +32,13 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
+$routes->get('doctrine-tools', 'DoctrineTools::index', ['filter' => 'admin']);
 $routes->get('/', 'Home::index');
-$routes->get('doctrine-tools', 'DoctrineTools::index');
+$routes->get('/auth/login', 'Auth::login');
+$routes->post('/auth', 'Auth::signin');
+$routes->post('/doctrine-tools', 'DoctrineTools::index', ['filter' => 'admin']);
 
-$routes->post('doctrine-tools', 'DoctrineTools::index');
+
 
 /*
  * --------------------------------------------------------------------

@@ -39,6 +39,13 @@ class BaseController extends Controller
 	 */
 	protected $helpers = [];
 
+
+    /**
+     * An array to pass data from the controller to a view
+     * @var array
+     */
+	protected $data = [];
+
 	/**
 	 * Constructor.
 	 *
@@ -49,9 +56,20 @@ class BaseController extends Controller
 	public function initController(RequestInterface $request, ResponseInterface $response, LoggerInterface $logger){
 		// Do Not Edit This Line
 		parent::initController($request, $response, $logger);
+//        $this->session = \Config\Services::session();
+//        $this->session->start();
 		//--------------------------------------------------------------------
 		// Preload any models, libraries, etc, here.
 		//--------------------------------------------------------------------
 		// E.g.: $this->session = \Config\Services::session();
 	}
+
+	public function customView(string $viewName) {
+	    if($this->data):
+	        echo view($viewName, $this->data);
+	    else:
+            die('teste');
+	        echo view($viewName);
+        endif;
+    }
 }

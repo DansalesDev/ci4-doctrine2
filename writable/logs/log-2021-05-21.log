@@ -1,0 +1,599 @@
+CRITICAL - 2021-05-21 08:51:22 --> Doctrine::__construct(): Failed opening required '/var/www/html/ci4-doctrine2/app/config/database.php' (include_path='.:/usr/share/php')
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-05-21 08:52:54 --> Doctrine::__construct(): Failed opening required '/var/www/html/ci4-doctrine2/app/libraries/Doctrine/Common/ClassLoader.php' (include_path='.:/usr/share/php')
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-05-21 08:53:27 --> syntax error, unexpected 'require_once' (T_REQUIRE_ONCE)
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClassmap()
+#2 /var/www/html/ci4-doctrine2/app/Controllers/BaseController.php(54): spl_autoload_call()
+#3 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\BaseController->initController()
+#4 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#5 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-21 08:53:49 --> syntax error, unexpected '$doctrineClassLoader' (T_VARIABLE)
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClassmap()
+#2 /var/www/html/ci4-doctrine2/app/Controllers/BaseController.php(54): spl_autoload_call()
+#3 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\BaseController->initController()
+#4 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#5 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-21 08:54:20 --> syntax error, unexpected '$doctrineClassLoader' (T_VARIABLE)
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClassmap()
+#2 /var/www/html/ci4-doctrine2/app/Controllers/BaseController.php(54): spl_autoload_call()
+#3 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\BaseController->initController()
+#4 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#5 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-21 09:26:19 --> CodeIgniter\Autoloader\Autoloader::main(): Failed opening required 'vendor/autoload.php' (include_path='.:/usr/share/php')
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-05-21 09:26:43 --> CodeIgniter\Autoloader\Autoloader::main(): Failed opening required '../../vendor/autoload.php' (include_path='.:/usr/share/php')
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-05-21 09:26:54 --> Argument 2 passed to Doctrine\ORM\Tools\Setup::createCacheConfiguration() must be of the type string, array given, called in /var/www/html/ci4-doctrine2/vendor/doctrine/orm/lib/Doctrine/ORM/Tools/Setup.php on line 131
+#0 /var/www/html/ci4-doctrine2/vendor/doctrine/orm/lib/Doctrine/ORM/Tools/Setup.php(131): Doctrine\ORM\Tools\Setup::createCacheConfiguration()
+#1 /var/www/html/ci4-doctrine2/vendor/doctrine/orm/lib/Doctrine/ORM/Tools/Setup.php(79): Doctrine\ORM\Tools\Setup::createConfiguration()
+#2 /var/www/html/ci4-doctrine2/app/Libraries/Doctrine.php(21): Doctrine\ORM\Tools\Setup::createAnnotationMetadataConfiguration()
+#3 /var/www/html/ci4-doctrine2/app/Controllers/BaseController.php(54): Doctrine->__construct()
+#4 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\BaseController->initController()
+#5 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#6 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-05-21 09:27:23 --> The given 'driver' MySQLi is unknown, Doctrine currently supports only the following drivers: pdo_mysql, pdo_sqlite, pdo_pgsql, pdo_oci, oci8, ibm_db2, pdo_sqlsrv, mysqli, drizzle_pdo_mysql, sqlanywhere, sqlsrv
+#0 /var/www/html/ci4-doctrine2/vendor/doctrine/dbal/lib/Doctrine/DBAL/DriverManager.php(281): Doctrine\DBAL\DBALException::unknownDriver()
+#1 /var/www/html/ci4-doctrine2/vendor/doctrine/dbal/lib/Doctrine/DBAL/DriverManager.php(234): Doctrine\DBAL\DriverManager::createDriver()
+#2 /var/www/html/ci4-doctrine2/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php(922): Doctrine\DBAL\DriverManager::getConnection()
+#3 /var/www/html/ci4-doctrine2/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php(902): Doctrine\ORM\EntityManager::createConnection()
+#4 /var/www/html/ci4-doctrine2/app/Libraries/Doctrine.php(24): Doctrine\ORM\EntityManager::create()
+#5 /var/www/html/ci4-doctrine2/app/Controllers/BaseController.php(54): Doctrine->__construct()
+#6 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\BaseController->initController()
+#7 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#8 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-05-21 09:27:55 --> Accessing static property Doctrine::$entityManager as non static
+#0 /var/www/html/ci4-doctrine2/app/Libraries/Doctrine.php(24): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4-doctrine2/app/Controllers/BaseController.php(54): Doctrine->__construct()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\BaseController->initController()
+#3 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#4 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-05-21 10:17:42 --> Argument 1 passed to Doctrine\ORM\Tools\SchemaTool::__construct() must be an instance of Doctrine\ORM\EntityManagerInterface, null given, called in /var/www/html/ci4-doctrine2/app/Controllers/DoctrineTools.php on line 29
+#0 /var/www/html/ci4-doctrine2/app/Controllers/DoctrineTools.php(29): Doctrine\ORM\Tools\SchemaTool->__construct()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(903): App\Controllers\DoctrineTools->__construct()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#3 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-21 10:38:19 --> Argument 1 passed to Doctrine\ORM\Tools\SchemaTool::__construct() must be an instance of Doctrine\ORM\EntityManagerInterface, null given, called in /var/www/html/ci4-doctrine2/app/Controllers/DoctrineTools.php on line 29
+#0 /var/www/html/ci4-doctrine2/app/Controllers/DoctrineTools.php(29): Doctrine\ORM\Tools\SchemaTool->__construct()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(903): App\Controllers\DoctrineTools->__construct()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#3 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-21 10:42:29 --> Too few arguments to function App\Controllers\DoctrineTools::__construct(), 0 passed in /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php on line 903 and exactly 1 expected
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(903): App\Controllers\DoctrineTools->__construct()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-21 10:47:39 --> Too few arguments to function App\Controllers\DoctrineTools::__construct(), 0 passed in /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php on line 903 and exactly 1 expected
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(903): App\Controllers\DoctrineTools->__construct()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-21 10:48:07 --> Invalid file: layout\doctrine.php
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Common.php(1250): CodeIgniter\View\View->render()
+#2 /var/www/html/ci4-doctrine2/app/Controllers/DoctrineTools.php(35): view()
+#3 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\DoctrineTools->index()
+#4 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-21 12:53:31 --> Access to undeclared static property: Doctrine::$entityManager
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(903): App\Controllers\DoctrineTools->__construct()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-21 12:56:02 --> Class 'Doctrine' not found
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(903): App\Controllers\DoctrineTools->__construct()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-21 12:57:06 --> Argument 1 passed to Doctrine\ORM\Tools\SchemaTool::__construct() must be an instance of Doctrine\ORM\EntityManagerInterface, null given, called in /var/www/html/ci4-doctrine2/app/Controllers/DoctrineTools.php on line 30
+#0 /var/www/html/ci4-doctrine2/app/Controllers/DoctrineTools.php(30): Doctrine\ORM\Tools\SchemaTool->__construct()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(903): App\Controllers\DoctrineTools->__construct()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#3 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-21 13:01:46 --> Argument 1 passed to Doctrine\ORM\Tools\SchemaTool::__construct() must be an instance of Doctrine\ORM\Tools\EntityManager, null given, called in /var/www/html/ci4-doctrine2/app/Controllers/DoctrineTools.php on line 31
+#0 /var/www/html/ci4-doctrine2/app/Controllers/DoctrineTools.php(31): Doctrine\ORM\Tools\SchemaTool->__construct()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(903): App\Controllers\DoctrineTools->__construct()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#3 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-21 13:02:20 --> Class name must be a valid object or a string
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(903): App\Controllers\DoctrineTools->__construct()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-21 13:04:00 --> Argument 1 passed to Doctrine\ORM\Tools\SchemaTool::__construct() must be an instance of Doctrine\ORM\Tools\EntityManager, instance of Doctrine\ORM\EntityManager given, called in /var/www/html/ci4-doctrine2/app/Controllers/DoctrineTools.php on line 32
+#0 /var/www/html/ci4-doctrine2/app/Controllers/DoctrineTools.php(32): Doctrine\ORM\Tools\SchemaTool->__construct()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(903): App\Controllers\DoctrineTools->__construct()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#3 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-21 13:04:35 --> Argument 1 passed to Doctrine\ORM\Tools\SchemaTool::__construct() must be an instance of Doctrine\ORM\Tools\EntityManager, instance of Doctrine\ORM\EntityManager given, called in /var/www/html/ci4-doctrine2/app/Controllers/DoctrineTools.php on line 32
+#0 /var/www/html/ci4-doctrine2/app/Controllers/DoctrineTools.php(32): Doctrine\ORM\Tools\SchemaTool->__construct()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(903): App\Controllers\DoctrineTools->__construct()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#3 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-21 13:05:02 --> An exception occurred in driver: Access denied for user ''@'localhost' (using password: NO)
+#0 /var/www/html/ci4-doctrine2/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(182): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException()
+#1 /var/www/html/ci4-doctrine2/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(169): Doctrine\DBAL\DBALException::wrapException()
+#2 /var/www/html/ci4-doctrine2/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/Mysqli/Driver.php(19): Doctrine\DBAL\DBALException::driverException()
+#3 /var/www/html/ci4-doctrine2/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(400): Doctrine\DBAL\Driver\Mysqli\Driver->connect()
+#4 /var/www/html/ci4-doctrine2/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(463): Doctrine\DBAL\Connection->connect()
+#5 /var/www/html/ci4-doctrine2/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(425): Doctrine\DBAL\Connection->getDatabasePlatformVersion()
+#6 /var/www/html/ci4-doctrine2/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(367): Doctrine\DBAL\Connection->detectDatabasePlatform()
+#7 /var/www/html/ci4-doctrine2/vendor/doctrine/orm/lib/Doctrine/ORM/Tools/SchemaTool.php(83): Doctrine\DBAL\Connection->getDatabasePlatform()
+#8 /var/www/html/ci4-doctrine2/app/Controllers/DoctrineTools.php(32): Doctrine\ORM\Tools\SchemaTool->__construct()
+#9 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(903): App\Controllers\DoctrineTools->__construct()
+#10 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#11 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#12 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-05-21 13:08:00 --> Array callback has to contain indices 0 and 1
+#0 /var/www/html/ci4-doctrine2/app/Libraries/Doctrine.php(26): Doctrine->configureDatabaseConnection()
+#1 /var/www/html/ci4-doctrine2/app/Controllers/DoctrineTools.php(30): Doctrine->__construct()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(903): App\Controllers\DoctrineTools->__construct()
+#3 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#4 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-05-21 13:08:58 --> Undefined index: DBDriver
+#0 /var/www/html/ci4-doctrine2/app/Libraries/Doctrine.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4-doctrine2/app/Libraries/Doctrine.php(26): Doctrine->configureDatabaseConnection()
+#2 /var/www/html/ci4-doctrine2/app/Controllers/DoctrineTools.php(30): Doctrine->__construct()
+#3 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(903): App\Controllers\DoctrineTools->__construct()
+#4 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#5 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-21 13:09:36 --> Undefined index: DBDriver
+#0 /var/www/html/ci4-doctrine2/app/Libraries/Doctrine.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4-doctrine2/app/Libraries/Doctrine.php(26): Doctrine->configureDatabaseConnection()
+#2 /var/www/html/ci4-doctrine2/app/Controllers/DoctrineTools.php(30): Doctrine->__construct()
+#3 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(903): App\Controllers\DoctrineTools->__construct()
+#4 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#5 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-21 13:09:52 --> Undefined index: hostname
+#0 /var/www/html/ci4-doctrine2/app/Libraries/Doctrine.php(34): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4-doctrine2/app/Libraries/Doctrine.php(26): Doctrine->configureDatabaseConnection()
+#2 /var/www/html/ci4-doctrine2/app/Controllers/DoctrineTools.php(30): Doctrine->__construct()
+#3 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(903): App\Controllers\DoctrineTools->__construct()
+#4 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#5 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-21 13:10:49 --> An exception occurred in driver: Access denied for user 'root'@'localhost'
+#0 /var/www/html/ci4-doctrine2/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(182): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException()
+#1 /var/www/html/ci4-doctrine2/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(169): Doctrine\DBAL\DBALException::wrapException()
+#2 /var/www/html/ci4-doctrine2/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/Mysqli/Driver.php(19): Doctrine\DBAL\DBALException::driverException()
+#3 /var/www/html/ci4-doctrine2/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(400): Doctrine\DBAL\Driver\Mysqli\Driver->connect()
+#4 /var/www/html/ci4-doctrine2/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(463): Doctrine\DBAL\Connection->connect()
+#5 /var/www/html/ci4-doctrine2/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(425): Doctrine\DBAL\Connection->getDatabasePlatformVersion()
+#6 /var/www/html/ci4-doctrine2/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(367): Doctrine\DBAL\Connection->detectDatabasePlatform()
+#7 /var/www/html/ci4-doctrine2/vendor/doctrine/orm/lib/Doctrine/ORM/Tools/SchemaTool.php(83): Doctrine\DBAL\Connection->getDatabasePlatform()
+#8 /var/www/html/ci4-doctrine2/app/Controllers/DoctrineTools.php(32): Doctrine\ORM\Tools\SchemaTool->__construct()
+#9 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(903): App\Controllers\DoctrineTools->__construct()
+#10 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#11 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#12 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-05-21 13:19:14 --> Invalid file: layout\doctrine.php
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Common.php(1250): CodeIgniter\View\View->render()
+#2 /var/www/html/ci4-doctrine2/app/Controllers/DoctrineTools.php(37): view()
+#3 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\DoctrineTools->index()
+#4 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-21 13:19:35 --> syntax error, unexpected ')', expecting ';' or ','
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(282): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 [internal function]: spl_autoload_call()
+#4 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(888): class_exists()
+#5 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(424): CodeIgniter\CodeIgniter->startController()
+#6 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-05-21 13:19:40 --> Invalid file: layout\doctrine.php
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Common.php(1250): CodeIgniter\View\View->render()
+#2 /var/www/html/ci4-doctrine2/app/Controllers/DoctrineTools.php(37): view()
+#3 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\DoctrineTools->index()
+#4 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-21 13:40:48 --> Class 'Models\Entities\User' does not exist
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\DoctrineTools->index()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-21 13:42:52 --> Class 'Models\Entities\User' does not exist
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\DoctrineTools->index()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-21 13:43:30 --> Class 'Models\Entities\User' does not exist
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\DoctrineTools->index()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-21 13:43:59 --> Class "App\Models\Entities\User" is not a valid entity or mapped super class.
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\DoctrineTools->index()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-21 13:45:03 --> No identifier/primary key specified for Entity "App\Models\Entities\User". Every Entity must have an identifier/primary key.
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\DoctrineTools->index()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-21 13:46:29 --> No identifier/primary key specified for Entity "App\Models\Entities\User". Every Entity must have an identifier/primary key.
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\DoctrineTools->index()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-21 13:46:48 --> [Semantical Error] The annotation "@Id" in property App\Models\Entities\User::$id was never imported. Did you maybe forget to add a "use" statement for this annotation?
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\DoctrineTools->index()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-21 13:47:16 --> [Semantical Error] The annotation "@Entity" in class App\Models\Entities\User was never imported. Did you maybe forget to add a "use" statement for this annotation?
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\DoctrineTools->index()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-21 13:47:28 --> No identifier/primary key specified for Entity "App\Models\Entities\User". Every Entity must have an identifier/primary key.
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\DoctrineTools->index()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-21 13:48:55 --> No identifier/primary key specified for Entity "App\Models\Entities\User". Every Entity must have an identifier/primary key.
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\DoctrineTools->index()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-21 13:52:05 --> Argument 4 passed to Doctrine\ORM\Tools\Setup::createAnnotationMetadataConfiguration() must be an instance of Doctrine\Common\Cache\Cache or null, string given, called in /var/www/html/ci4-doctrine2/app/Libraries/Doctrine.php on line 25
+#0 /var/www/html/ci4-doctrine2/app/Libraries/Doctrine.php(25): Doctrine\ORM\Tools\Setup::createAnnotationMetadataConfiguration()
+#1 /var/www/html/ci4-doctrine2/app/Controllers/DoctrineTools.php(28): Doctrine->__construct()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(903): App\Controllers\DoctrineTools->__construct()
+#3 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(429): CodeIgniter\CodeIgniter->createController()
+#4 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-05-21 13:54:31 --> No identifier/primary key specified for Entity "App\Models\Entities\User". Every Entity must have an identifier/primary key.
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\DoctrineTools->index()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-21 13:55:43 --> No identifier/primary key specified for Entity "App\Models\Entities\User". Every Entity must have an identifier/primary key.
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\DoctrineTools->index()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-21 13:55:54 --> No identifier/primary key specified for Entity "App\Models\Entities\User". Every Entity must have an identifier/primary key.
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\DoctrineTools->index()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-21 13:56:11 --> No identifier/primary key specified for Entity "App\Models\Entities\User". Every Entity must have an identifier/primary key.
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\DoctrineTools->index()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-21 13:56:35 --> No identifier/primary key specified for Entity "App\Models\Entities\User". Every Entity must have an identifier/primary key.
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\DoctrineTools->index()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-21 13:56:46 --> [Semantical Error] The annotation "@Id" in property App\Models\Entities\User::$id was never imported. Did you maybe forget to add a "use" statement for this annotation?
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\DoctrineTools->index()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-21 13:57:20 --> No identifier/primary key specified for Entity "App\Models\Entities\User". Every Entity must have an identifier/primary key.
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\DoctrineTools->index()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-21 13:58:55 --> No identifier/primary key specified for Entity "App\Models\Entities\User". Every Entity must have an identifier/primary key.
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\DoctrineTools->index()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-21 14:01:16 --> [Semantical Error] The annotation "@ORM\Column" in property App\Models\Entities\User::$id was never imported. Did you maybe forget to add a "use" statement for this annotation?
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\DoctrineTools->index()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-21 14:01:26 --> [Semantical Error] The annotation "@Column" in property App\Models\Entities\User::$id was never imported. Did you maybe forget to add a "use" statement for this annotation?
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\DoctrineTools->index()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-21 14:02:42 --> [Semantical Error] The annotation "@ORM\GeneratedValue" in property App\Models\Entities\User::$id was never imported. Did you maybe forget to add a "use" statement for this annotation?
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\DoctrineTools->index()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-21 14:02:55 --> Invalid file: layout\doctrine.php
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\DoctrineTools->index()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-21 14:55:03 --> syntax error, unexpected '{', expecting identifier (T_STRING) or namespace (T_NAMESPACE) or \\ (T_NS_SEPARATOR)
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(282): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 [internal function]: spl_autoload_call()
+#4 /var/www/html/ci4-doctrine2/vendor/doctrine/persistence/lib/Doctrine/Persistence/Mapping/RuntimeReflectionService.php(37): class_exists()
+#5 /var/www/html/ci4-doctrine2/vendor/doctrine/persistence/lib/Doctrine/Persistence/Mapping/AbstractClassMetadataFactory.php(326): Doctrine\Persistence\Mapping\RuntimeReflectionService->getParentClasses()
+#6 /var/www/html/ci4-doctrine2/vendor/doctrine/persistence/lib/Doctrine/Persistence/Mapping/AbstractClassMetadataFactory.php(360): Doctrine\Persistence\Mapping\AbstractClassMetadataFactory->getParentClasses()
+#7 /var/www/html/ci4-doctrine2/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php(84): Doctrine\Persistence\Mapping\AbstractClassMetadataFactory->loadMetadata()
+#8 /var/www/html/ci4-doctrine2/vendor/doctrine/persistence/lib/Doctrine/Persistence/Mapping/AbstractClassMetadataFactory.php(251): Doctrine\ORM\Mapping\ClassMetadataFactory->loadMetadata()
+#9 /var/www/html/ci4-doctrine2/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php(300): Doctrine\Persistence\Mapping\AbstractClassMetadataFactory->getMetadataFor()
+#10 /var/www/html/ci4-doctrine2/app/Controllers/DoctrineTools.php(51): Doctrine\ORM\EntityManager->getClassMetadata()
+#11 /var/www/html/ci4-doctrine2/app/Controllers/DoctrineTools.php(39): App\Controllers\DoctrineTools->getEntitesList()
+#12 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\DoctrineTools->index()
+#13 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#14 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#15 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#16 {main}
+CRITICAL - 2021-05-21 14:55:31 --> [Semantical Error] The annotation "@Id" in property App\Models\Entities\Entity::$id was never imported. Did you maybe forget to add a "use" statement for this annotation?
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\DoctrineTools->index()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-21 14:55:44 --> [Semantical Error] The annotation "@Column" in property App\Models\Entities\Entity::$id was never imported. Did you maybe forget to add a "use" statement for this annotation?
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\DoctrineTools->index()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-21 15:18:15 --> [Syntax Error] Expected Doctrine\Common\Annotations\DocLexer::T_CLOSE_PARENTHESIS, got 'nullable' at position 150 in property App\Models\Entities\User::$status.
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\DoctrineTools->index()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-21 15:19:14 --> Duplicate definition of column 'name' on entity 'App\Models\Entities\Admin' in a field or discriminator column mapping.
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\DoctrineTools->index()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-21 15:20:58 --> Unknown column type "int" requested. Any Doctrine type that you use has to be registered with \Doctrine\DBAL\Types\Type::addType(). You can get a list of all the known types with \Doctrine\DBAL\Types\Type::getTypesMap(). If this error occurs during database introspection then you might have forgotten to register all database types for a Doctrine Type. Use AbstractPlatform#registerDoctrineTypeMapping() or have your custom types implement Type#getMappedDatabaseTypes(). If the type name is empty you might have a problem with the cache or forgot some mapping information.
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\DoctrineTools->index()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-21 15:22:07 --> Unknown database type enum requested, Doctrine\DBAL\Platforms\MySQL57Platform may not support it.
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\DoctrineTools->index()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-21 15:22:58 --> Unknown database type enum requested, Doctrine\DBAL\Platforms\MySQL57Platform may not support it.
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\DoctrineTools->index()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-21 16:43:47 --> Unknown database type enum requested, Doctrine\DBAL\Platforms\MySQL57Platform may not support it.
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\DoctrineTools->index()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-21 17:06:24 --> Duplicate definition of column 'status' on entity 'App\Models\Entities\Admin' in a field or discriminator column mapping.
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\DoctrineTools->index()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-21 17:15:45 --> File mapping drivers must have a valid directory path, however the given path [/var/www/html/ci4-doctrine2/app/App\Models\Entities] seems to be incorrect!
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\DoctrineTools->index()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-21 17:16:46 --> File mapping drivers must have a valid directory path, however the given path [/var/www/html/ci4-doctrine2/app/App\Models\Entities] seems to be incorrect!
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\DoctrineTools->index()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-21 17:18:00 --> File mapping drivers must have a valid directory path, however the given path [/var/www/html/ci4-doctrine2/app/App\Models\Entities] seems to be incorrect!
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\DoctrineTools->index()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-21 17:18:08 --> File mapping drivers must have a valid directory path, however the given path [/var/www/html/ci4-doctrine2/app/App\Models\Entities] seems to be incorrect!
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\DoctrineTools->index()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-21 17:18:28 --> File mapping drivers must have a valid directory path, however the given path [/var/www/html/ci4-doctrine2/app/App\Models\Entities] seems to be incorrect!
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\DoctrineTools->index()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-21 17:18:56 --> File mapping drivers must have a valid directory path, however the given path [/var/www/html/ci4-doctrine2/app/App\Models\Entities] seems to be incorrect!
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\DoctrineTools->index()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-21 17:19:05 --> File mapping drivers must have a valid directory path, however the given path [/var/www/html/ci4-doctrine2/app/App\Models\Entities] seems to be incorrect!
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\DoctrineTools->index()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-21 17:19:59 --> File mapping drivers must have a valid directory path, however the given path [/var/www/html/ci4-doctrine2/app/App\Models\Entities] seems to be incorrect!
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\DoctrineTools->index()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-21 19:03:28 --> Method App\Models\Repository\UserRepository::__callStatic() must take exactly 2 arguments
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-05-21 19:25:31 --> Too few arguments to function App\Models\Repository\Repository::findAll(), 0 passed in /var/www/html/ci4-doctrine2/app/Controllers/Home.php on line 11 and exactly 1 expected
+#0 /var/www/html/ci4-doctrine2/app/Controllers/Home.php(11): App\Models\Repository\Repository::findAll()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Home->index()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-21 19:25:50 --> Undefined variable: entity
+#0 /var/www/html/ci4-doctrine2/app/Models/Repository/Repository.php(24): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4-doctrine2/app/Controllers/Home.php(11): App\Models\Repository\Repository::findAll()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Home->index()
+#3 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-05-21 19:26:36 --> Call to undefined function App\Controllers\AdminRepository()
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Home->index()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-21 19:30:20 --> Argument 1 passed to Doctrine\Persistence\Mapping\AbstractClassMetadataFactory::getRealClass() must be of the type string, null given, called in /var/www/html/ci4-doctrine2/vendor/doctrine/persistence/lib/Doctrine/Persistence/Mapping/AbstractClassMetadataFactory.php on line 232
+#0 /var/www/html/ci4-doctrine2/vendor/doctrine/persistence/lib/Doctrine/Persistence/Mapping/AbstractClassMetadataFactory.php(232): Doctrine\Persistence\Mapping\AbstractClassMetadataFactory->getRealClass()
+#1 /var/www/html/ci4-doctrine2/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php(300): Doctrine\Persistence\Mapping\AbstractClassMetadataFactory->getMetadataFor()
+#2 /var/www/html/ci4-doctrine2/vendor/doctrine/orm/lib/Doctrine/ORM/Repository/DefaultRepositoryFactory.php(45): Doctrine\ORM\EntityManager->getClassMetadata()
+#3 /var/www/html/ci4-doctrine2/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php(765): Doctrine\ORM\Repository\DefaultRepositoryFactory->getRepository()
+#4 /var/www/html/ci4-doctrine2/app/Models/Repository/Repository.php(25): Doctrine\ORM\EntityManager->getRepository()
+#5 /var/www/html/ci4-doctrine2/app/Controllers/Home.php(11): App\Models\Repository\Repository::findAll()
+#6 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Home->index()
+#7 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-05-21 19:31:44 --> Argument 1 passed to Doctrine\Persistence\Mapping\AbstractClassMetadataFactory::getRealClass() must be of the type string, null given, called in /var/www/html/ci4-doctrine2/vendor/doctrine/persistence/lib/Doctrine/Persistence/Mapping/AbstractClassMetadataFactory.php on line 232
+#0 /var/www/html/ci4-doctrine2/vendor/doctrine/persistence/lib/Doctrine/Persistence/Mapping/AbstractClassMetadataFactory.php(232): Doctrine\Persistence\Mapping\AbstractClassMetadataFactory->getRealClass()
+#1 /var/www/html/ci4-doctrine2/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php(300): Doctrine\Persistence\Mapping\AbstractClassMetadataFactory->getMetadataFor()
+#2 /var/www/html/ci4-doctrine2/vendor/doctrine/orm/lib/Doctrine/ORM/Repository/DefaultRepositoryFactory.php(45): Doctrine\ORM\EntityManager->getClassMetadata()
+#3 /var/www/html/ci4-doctrine2/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php(765): Doctrine\ORM\Repository\DefaultRepositoryFactory->getRepository()
+#4 /var/www/html/ci4-doctrine2/app/Models/Repository/Repository.php(25): Doctrine\ORM\EntityManager->getRepository()
+#5 /var/www/html/ci4-doctrine2/app/Controllers/Home.php(11): App\Models\Repository\Repository::findAll()
+#6 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Home->index()
+#7 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-05-21 19:31:45 --> Argument 1 passed to Doctrine\Persistence\Mapping\AbstractClassMetadataFactory::getRealClass() must be of the type string, null given, called in /var/www/html/ci4-doctrine2/vendor/doctrine/persistence/lib/Doctrine/Persistence/Mapping/AbstractClassMetadataFactory.php on line 232
+#0 /var/www/html/ci4-doctrine2/vendor/doctrine/persistence/lib/Doctrine/Persistence/Mapping/AbstractClassMetadataFactory.php(232): Doctrine\Persistence\Mapping\AbstractClassMetadataFactory->getRealClass()
+#1 /var/www/html/ci4-doctrine2/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php(300): Doctrine\Persistence\Mapping\AbstractClassMetadataFactory->getMetadataFor()
+#2 /var/www/html/ci4-doctrine2/vendor/doctrine/orm/lib/Doctrine/ORM/Repository/DefaultRepositoryFactory.php(45): Doctrine\ORM\EntityManager->getClassMetadata()
+#3 /var/www/html/ci4-doctrine2/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php(765): Doctrine\ORM\Repository\DefaultRepositoryFactory->getRepository()
+#4 /var/www/html/ci4-doctrine2/app/Models/Repository/Repository.php(25): Doctrine\ORM\EntityManager->getRepository()
+#5 /var/www/html/ci4-doctrine2/app/Controllers/Home.php(11): App\Models\Repository\Repository::findAll()
+#6 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Home->index()
+#7 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-05-21 19:33:59 --> Argument 1 passed to Doctrine\Persistence\Mapping\AbstractClassMetadataFactory::getRealClass() must be of the type string, null given, called in /var/www/html/ci4-doctrine2/vendor/doctrine/persistence/lib/Doctrine/Persistence/Mapping/AbstractClassMetadataFactory.php on line 232
+#0 /var/www/html/ci4-doctrine2/vendor/doctrine/persistence/lib/Doctrine/Persistence/Mapping/AbstractClassMetadataFactory.php(232): Doctrine\Persistence\Mapping\AbstractClassMetadataFactory->getRealClass()
+#1 /var/www/html/ci4-doctrine2/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php(300): Doctrine\Persistence\Mapping\AbstractClassMetadataFactory->getMetadataFor()
+#2 /var/www/html/ci4-doctrine2/vendor/doctrine/orm/lib/Doctrine/ORM/Repository/DefaultRepositoryFactory.php(45): Doctrine\ORM\EntityManager->getClassMetadata()
+#3 /var/www/html/ci4-doctrine2/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php(765): Doctrine\ORM\Repository\DefaultRepositoryFactory->getRepository()
+#4 /var/www/html/ci4-doctrine2/app/Models/Repository/Repository.php(25): Doctrine\ORM\EntityManager->getRepository()
+#5 /var/www/html/ci4-doctrine2/app/Controllers/Home.php(11): App\Models\Repository\Repository::findAll()
+#6 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Home->index()
+#7 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-05-21 19:34:12 --> Argument 1 passed to Doctrine\Persistence\Mapping\AbstractClassMetadataFactory::getRealClass() must be of the type string, null given, called in /var/www/html/ci4-doctrine2/vendor/doctrine/persistence/lib/Doctrine/Persistence/Mapping/AbstractClassMetadataFactory.php on line 232
+#0 /var/www/html/ci4-doctrine2/vendor/doctrine/persistence/lib/Doctrine/Persistence/Mapping/AbstractClassMetadataFactory.php(232): Doctrine\Persistence\Mapping\AbstractClassMetadataFactory->getRealClass()
+#1 /var/www/html/ci4-doctrine2/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php(300): Doctrine\Persistence\Mapping\AbstractClassMetadataFactory->getMetadataFor()
+#2 /var/www/html/ci4-doctrine2/vendor/doctrine/orm/lib/Doctrine/ORM/Repository/DefaultRepositoryFactory.php(45): Doctrine\ORM\EntityManager->getClassMetadata()
+#3 /var/www/html/ci4-doctrine2/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php(765): Doctrine\ORM\Repository\DefaultRepositoryFactory->getRepository()
+#4 /var/www/html/ci4-doctrine2/app/Models/Repository/Repository.php(25): Doctrine\ORM\EntityManager->getRepository()
+#5 /var/www/html/ci4-doctrine2/app/Controllers/Home.php(11): App\Models\Repository\Repository::findAll()
+#6 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Home->index()
+#7 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-05-21 19:35:38 --> Argument 1 passed to Doctrine\Persistence\Mapping\AbstractClassMetadataFactory::getRealClass() must be of the type string, null given, called in /var/www/html/ci4-doctrine2/vendor/doctrine/persistence/lib/Doctrine/Persistence/Mapping/AbstractClassMetadataFactory.php on line 232
+#0 /var/www/html/ci4-doctrine2/vendor/doctrine/persistence/lib/Doctrine/Persistence/Mapping/AbstractClassMetadataFactory.php(232): Doctrine\Persistence\Mapping\AbstractClassMetadataFactory->getRealClass()
+#1 /var/www/html/ci4-doctrine2/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php(300): Doctrine\Persistence\Mapping\AbstractClassMetadataFactory->getMetadataFor()
+#2 /var/www/html/ci4-doctrine2/vendor/doctrine/orm/lib/Doctrine/ORM/Repository/DefaultRepositoryFactory.php(45): Doctrine\ORM\EntityManager->getClassMetadata()
+#3 /var/www/html/ci4-doctrine2/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php(765): Doctrine\ORM\Repository\DefaultRepositoryFactory->getRepository()
+#4 /var/www/html/ci4-doctrine2/app/Models/Repository/Repository.php(29): Doctrine\ORM\EntityManager->getRepository()
+#5 /var/www/html/ci4-doctrine2/app/Controllers/Home.php(11): App\Models\Repository\Repository::findAll()
+#6 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(931): App\Controllers\Home->index()
+#7 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#10 {main}

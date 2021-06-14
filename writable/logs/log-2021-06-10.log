@@ -1,0 +1,217 @@
+CRITICAL - 2021-06-10 17:59:12 --> baseControlller filter must have a matching alias defined.
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Filters/Filters.php(546): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Filters/Filters.php(264): CodeIgniter\Filters\Filters->processAliasesToClass()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Filters/Filters.php(168): CodeIgniter\Filters\Filters->initialize()
+#3 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\Filters\Filters->run()
+#4 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-10 18:07:49 --> syntax error, unexpected ']'
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(282): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 [internal function]: spl_autoload_call()
+#4 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Config/Factories.php(149): class_exists()
+#5 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Config/Factories.php(115): CodeIgniter\Config\Factories::locateClass()
+#6 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Common.php(228): CodeIgniter\Config\Factories::__callStatic()
+#7 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Config/Services.php(305): config()
+#8 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Config/BaseService.php(263): CodeIgniter\Config\Services::filters()
+#9 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Config/BaseService.php(192): CodeIgniter\Config\BaseService::__callStatic()
+#10 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Config/Services.php(302): CodeIgniter\Config\BaseService::getSharedInstance()
+#11 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Config/BaseService.php(263): CodeIgniter\Config\Services::filters()
+#12 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(395): CodeIgniter\Config\BaseService::__callStatic()
+#13 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#14 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#15 {main}
+CRITICAL - 2021-06-10 18:08:05 --> App\Filters\Admin filter must have a matching alias defined.
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Filters/Filters.php(546): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Filters/Filters.php(264): CodeIgniter\Filters\Filters->processAliasesToClass()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Filters/Filters.php(168): CodeIgniter\Filters\Filters->initialize()
+#3 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\Filters\Filters->run()
+#4 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-10 18:08:09 --> App\Filters\Admin filter must have a matching alias defined.
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Filters/Filters.php(546): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Filters/Filters.php(264): CodeIgniter\Filters\Filters->processAliasesToClass()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Filters/Filters.php(168): CodeIgniter\Filters\Filters->initialize()
+#3 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\Filters\Filters->run()
+#4 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-10 18:08:23 --> App\Filters\Admin filter must have a matching alias defined.
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Filters/Filters.php(546): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Filters/Filters.php(264): CodeIgniter\Filters\Filters->processAliasesToClass()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Filters/Filters.php(168): CodeIgniter\Filters\Filters->initialize()
+#3 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\Filters\Filters->run()
+#4 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-10 18:08:39 --> App\Filters\Admin filter must have a matching alias defined.
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Filters/Filters.php(546): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Filters/Filters.php(264): CodeIgniter\Filters\Filters->processAliasesToClass()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Filters/Filters.php(168): CodeIgniter\Filters\Filters->initialize()
+#3 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\Filters\Filters->run()
+#4 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-10 18:16:50 --> Cannot access protected property CodeIgniter\HTTP\IncomingRequest::$body
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Filters/Filters.php(181): App\Filters\AdminFilter->before()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\Filters\Filters->run()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-06-10 18:56:11 --> syntax error, unexpected 'die' (T_EXIT)
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(282): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Filters/Filters.php(172): spl_autoload_call()
+#4 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\Filters\Filters->run()
+#5 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-06-10 18:56:25 --> Uncaught ErrorException: Array to string conversion in /var/www/html/ci4-doctrine2/app/Filters/AdminFilter.php:19
+Stack trace:
+#0 /var/www/html/ci4-doctrine2/app/Filters/AdminFilter.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Filters/Filters.php(181): App\Filters\AdminFilter->before()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\Filters\Filters->run()
+#3 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-10 18:59:26 --> Call to undefined function App\Filters\set()
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Filters/Filters.php(181): App\Filters\AdminFilter->before()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\Filters\Filters->run()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-06-10 19:02:28 --> Uncaught Error: Object of class CodeIgniter\Session\Session could not be converted to string in /var/www/html/ci4-doctrine2/app/Filters/AdminFilter.php:16
+Stack trace:
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Filters/Filters.php(181): App\Filters\AdminFilter->before()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\Filters\Filters->run()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-06-10 19:04:53 --> syntax error, unexpected ')'
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(282): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Filters/Filters.php(172): spl_autoload_call()
+#4 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\Filters\Filters->run()
+#5 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-06-10 19:05:19 --> adm filter must have a matching alias defined.
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Filters/Filters.php(546): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Filters/Filters.php(264): CodeIgniter\Filters\Filters->processAliasesToClass()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Filters/Filters.php(168): CodeIgniter\Filters\Filters->initialize()
+#3 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\Filters\Filters->run()
+#4 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-10 19:17:09 --> Argument 2 passed to CodeIgniter\HTTP\RedirectResponse::route() must be of the type array, null given, called in /var/www/html/ci4-doctrine2/app/Filters/AdminFilter.php on line 17
+#0 /var/www/html/ci4-doctrine2/app/Filters/AdminFilter.php(17): CodeIgniter\HTTP\RedirectResponse->route()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Filters/Filters.php(181): App\Filters\AdminFilter->before()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\Filters\Filters->run()
+#3 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-10 19:17:32 --> Argument 3 passed to CodeIgniter\HTTP\RedirectResponse::route() must be of the type int, string given, called in /var/www/html/ci4-doctrine2/app/Filters/AdminFilter.php on line 17
+#0 /var/www/html/ci4-doctrine2/app/Filters/AdminFilter.php(17): CodeIgniter\HTTP\RedirectResponse->route()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Filters/Filters.php(181): App\Filters\AdminFilter->before()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\Filters\Filters->run()
+#3 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-10 19:20:08 -->  route cannot be found while reverse-routing.
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/HTTP/RedirectResponse.php(64): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Common.php(951): CodeIgniter\HTTP\RedirectResponse->route()
+#2 /var/www/html/ci4-doctrine2/app/Filters/AdminFilter.php(17): redirect()
+#3 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Filters/Filters.php(181): App\Filters\AdminFilter->before()
+#4 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\Filters\Filters->run()
+#5 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-06-10 19:31:06 -->  route cannot be found while reverse-routing.
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/HTTP/RedirectResponse.php(64): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute()
+#1 /var/www/html/ci4-doctrine2/app/Filters/AdminFilter.php(17): CodeIgniter\HTTP\RedirectResponse->route()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Filters/Filters.php(181): App\Filters\AdminFilter->before()
+#3 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\Filters\Filters->run()
+#4 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-10 19:31:28 -->  route cannot be found while reverse-routing.
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/HTTP/RedirectResponse.php(64): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute()
+#1 /var/www/html/ci4-doctrine2/app/Filters/AdminFilter.php(17): CodeIgniter\HTTP\RedirectResponse->route()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Filters/Filters.php(181): App\Filters\AdminFilter->before()
+#3 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\Filters\Filters->run()
+#4 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-10 19:32:23 -->  route cannot be found while reverse-routing.
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/HTTP/RedirectResponse.php(64): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute()
+#1 /var/www/html/ci4-doctrine2/app/Filters/AdminFilter.php(17): CodeIgniter\HTTP\RedirectResponse->route()
+#2 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Filters/Filters.php(181): App\Filters\AdminFilter->before()
+#3 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\Filters\Filters->run()
+#4 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-10 19:33:25 --> Invalid file: auth/loin.php
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Common.php(1250): CodeIgniter\View\View->render()
+#2 /var/www/html/ci4-doctrine2/app/Filters/AdminFilter.php(17): view()
+#3 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Filters/Filters.php(181): App\Filters\AdminFilter->before()
+#4 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\Filters\Filters->run()
+#5 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-06-10 19:33:40 --> Invalid file: auth/login.php
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Common.php(1250): CodeIgniter\View\View->render()
+#2 /var/www/html/ci4-doctrine2/app/Filters/AdminFilter.php(17): view()
+#3 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Filters/Filters.php(181): App\Filters\AdminFilter->before()
+#4 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\Filters\Filters->run()
+#5 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-06-10 19:37:32 --> syntax error, unexpected ';', expecting ')'
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(282): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Filters/Filters.php(172): spl_autoload_call()
+#4 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\Filters\Filters->run()
+#5 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-06-10 20:14:56 -->  route cannot be found while reverse-routing.
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/HTTP/RedirectResponse.php(64): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Common.php(951): CodeIgniter\HTTP\RedirectResponse->route()
+#2 /var/www/html/ci4-doctrine2/app/Filters/SysAdminFilter.php(16): redirect()
+#3 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Filters/Filters.php(181): App\Filters\SysAdminFilter->before()
+#4 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\Filters\Filters->run()
+#5 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-06-10 20:15:28 -->  route cannot be found while reverse-routing.
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/HTTP/RedirectResponse.php(64): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Common.php(951): CodeIgniter\HTTP\RedirectResponse->route()
+#2 /var/www/html/ci4-doctrine2/app/Filters/SysAdminFilter.php(16): redirect()
+#3 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Filters/Filters.php(181): App\Filters\SysAdminFilter->before()
+#4 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\Filters\Filters->run()
+#5 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-06-10 20:20:49 -->  route cannot be found while reverse-routing.
+#0 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/HTTP/RedirectResponse.php(64): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute()
+#1 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Common.php(951): CodeIgniter\HTTP\RedirectResponse->route()
+#2 /var/www/html/ci4-doctrine2/app/Filters/SysAdminFilter.php(16): redirect()
+#3 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/Filters/Filters.php(181): App\Filters\SysAdminFilter->before()
+#4 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\Filters\Filters->run()
+#5 /var/www/html/ci4-doctrine2/vendor/codeigniter4/framework/system/CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ci4-doctrine2/public/index.php(36): CodeIgniter\CodeIgniter->run()
+#7 {main}
